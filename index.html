@@ -201,19 +201,19 @@
                         <form action="https://formspree.io/f/mgvypgyo" method="POST">
                             <div class="mb-3">
                                 <label for="fullName" class="form-label">שם מלא</label>
-                                <input type="text" class="form-control" id="fullName" required>
+                                <input type="text" name="name" class="form-control" id="fullName" required>
                             </div>
                             <div class="mb-3">
                                 <label for="phone" class="form-label">טלפון</label>
-                                <input type="tel" class="form-control" id="phone" required>
+                                <input type="tel" name="phone" class="form-control" id="phone" required>
                             </div>
                             <div class="mb-3">
                                 <label for="deviceModel" class="form-label">דגם הטלפון</label>
-                                <input type="text" class="form-control" id="deviceModel">
+                                <input type="text" name="model" class="form-control" id="deviceModel">
                             </div>
                             <div class="mb-3">
                                 <label for="problemDescription" class="form-label">תיאור הבעיה</label>
-                                <textarea class="form-control" id="problemDescription" rows="4" required></textarea>
+                                <textarea name="message" class="form-control" id="problemDescription" rows="4" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary main-btn w-100">שלח הודעה</button>
                         </form>
