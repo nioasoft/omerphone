@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #FF8C42;
+    --secondary-color: #F5F5F5;
+    --text-color: #333333;
+    --light-text-color: #FFFFFF;
+    --dark-bg-color: #343a40;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: var(--text-color);
+    text-align: right;
+    direction: rtl;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.main-btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 500;
+}
+
+.main-btn:hover {
+    background-color: #e07b3a;
+    border-color: #e07b3a;
+}
+
+/* Header */
+.navbar-brand {
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.header-contact .phone-number {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://via.placeholder.com/1920x600/333333/FFFFFF?text=Omer+Phone+Lab') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-weight: 900;
+}
+
+.hero-section .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+}
+
+/* Services Section */
+#services .card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#services .card i {
+    color: var(--primary-color);
+}
+
+/* Why Us Section */
+#why-us i {
+    color: var(--primary-color);
+}
+
+/* How It Works Section */
+.step-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg-color);
+}
+
+/* Animations */
+body {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .header-contact {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .header-contact .ms-3 {
+        margin-left: 0 !important;
+        margin-right: 1rem;
+    }
+}
